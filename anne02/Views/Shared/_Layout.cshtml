@@ -1,0 +1,115 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>@ViewData["Title"] - ADS</title>
+
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/icomoon.css">
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
+          asp-fallback-href="~/css/bootstrap.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <link rel="stylesheet" href="~/css/flexslider.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <script src="~/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="container-wrap">
+                <div class="top-menu">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div id="fh5co-logo"><a asp-controller="Home" asp-action="Index">Anne's Decorating Services</a></div>
+                        </div>
+                        <div class="col-xs-6 text-right menu-1">
+                            <ul>
+                                <li class="@ViewData["HomeStatus"]"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                <li class="@ViewData["ServicesStatus"]"><a asp-controller="Home" asp-action="Services">Services</a></li>
+                                @*<li class="has-dropdown">
+                                    <a href="blog.html">Blog</a>
+                                    <ul class="dropdown">
+                                        <li><a href="#">Painting</a></li>
+                                        <li><a href="#">Papering</a></li>
+                                        <li><a href="#">Prep</a></li>
+                                        <li><a href="#">Cutting In</a></li>
+                                    </ul>
+                                </li>*@
+                                <li class="@ViewData["WorkStatus"]"><a asp-controller="Home" asp-action="Work">My Work</a></li>
+                                <li class="@ViewData["ContactStatus"]"><a asp-controller="Home" asp-action="Contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-wrap">
+            @RenderBody()
+        </div><!-- END container-wrap -->
+        <div class="container-wrap">
+            <footer id="fh5co-footer" role="contentinfo">
+                <div class="row">
+                    <div class="col-md-3 fh5co-widget">
+                        <h4>Hi, I'm Anne</h4>
+                        <p>Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <h4>Phone me</h4>
+                        <ul class="fh5co-footer-links">
+                            <li><a href="tel:+447971106366">07971 106366</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row copyright">
+                    <div class="col-md-12 text-center">
+                        <p>
+                            <small class="block">&copy; 2018 Anne's Decorating Services. All Rights Reserved.</small>
+                            <small class="block">Site by <a href="http://www.jeremybowden.net/" target="_blank">Jeremy Bowden</a> using Neat Bootstrap template.</small>
+                        </p>
+                        @*<p>
+                            <ul class="fh5co-social-icons">
+                                <li><a href="#"><img src="~/images/facebook.png" alt="wallpaper" height="20" width="20"></a></li>
+                                <li><a href="#"><img src="~/images/instagram.png" alt="wallpaper" height="20" width="20"></a></li>
+                                <li><a href="#"><img src="~/images/twitter.png" alt="wallpaper" height="20" width="20"></a></li>
+                            </ul>
+                        </p>*@
+                    </div>
+                </div>
+            </footer>
+        </div><!-- END container-wrap -->
+    </div>
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+            asp-fallback-src="~/js/jquery.min.js"
+            asp-fallback-test="window.jQuery"
+            crossorigin="anonymous"
+            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+            asp-fallback-src="~/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+            crossorigin="anonymous"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+    </script>
+    <script src="~/js/jquery.easing.1.3.js"></script>
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <script src="~/js/jquery.flexslider-min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/magnific-popup-options.js"></script>
+    <script src="~/js/jquery.countTo.js"></script>
+    <script src="~/js/main.js"></script>
+</body>
+</html>
+
