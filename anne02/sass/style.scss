@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	ul {
 		padding: 0;
-		margin: 5px 0 0 0;
+		margin: 15px 0 0 0;
 		li {
 			font-family: $font-secondary;
 			padding: 0;
@@ -580,42 +580,52 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
  //SERVICES
-.services{
-	position: relative;
-	@include transition(.3s);
-	h3{
-		margin-bottom: 40px;
-        font-size: 13px;
-		font-family: $font-secondary;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-weight: 700;
-		a{
-			color: $brand-black;
-		}
-	}
-	.icon {
-		// width: 90px;
-		// height: 90px;
-		// background: $brand-primary;
-		display: table;
-		text-align: center;
-		margin:0 auto;
-		margin-bottom: 60px;
-		@include border-radius(50%);
-		@include transition(.3s);
-		@media screen and (max-width: $screen-md){
-			margin: 0 auto 30px auto;
-		}
-		i {
-			display: table-cell;
-			vertical-align: middle;
-			// height: 90px;
-			font-size: 40px;
-			line-height: 40px;
-			color: $brand-black;
-		}
-	}
+.services {
+    position: relative;
+    @include transition(.3s);
+
+    h3 {
+        margin-bottom: 40px;
+        font-size: 24px;
+        font-family: $font-secondary;
+        /*text-transform: uppercase;*/
+        letter-spacing: 1.5px;
+        font-weight: 400;
+
+        a {
+            color: $brand-black;
+        }
+    }
+
+    .icon {
+        // width: 90px;
+        // height: 90px;
+        // background: $brand-primary;
+        display: table;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        @include border-radius(50%);
+        @include transition(.3s);
+
+        @media screen and (max-width: $screen-md) {
+            margin: 0 auto 30px auto;
+        }
+
+        i {
+            display: table-cell;
+            vertical-align: middle;
+            // height: 90px;
+            font-size: 40px;
+            line-height: 40px;
+            color: $brand-black;
+        }
+
+        img {
+            border-radius: 50%;
+            border: 1px solid $brand-primary;
+        }
+    }
 }
 
 
@@ -1011,13 +1021,12 @@ input[type="text"] {
 		margin-bottom: 2em;
 	}
 	h2 {
-		font-size: 13px;
+		font-size: 24px;
 		margin-bottom: 20px;
 		line-height: 1.5;
-		font-weight: 700;
+		font-weight: 400;
 		font-family: $font-secondary;
-		letter-spacing: 1px;
-		text-transform: uppercase;
+		letter-spacing: 1.5px;
 		color: $brand-black;
 	}
 	span{
@@ -1075,6 +1084,7 @@ input[type="text"] {
     .copyright {
         display: block;
         margin-top: 50px;
+        font-size: 70%;
         .block {
             display: block;
         }
