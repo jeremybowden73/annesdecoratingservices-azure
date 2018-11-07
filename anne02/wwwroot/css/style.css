@@ -11,12 +11,12 @@
 *
 * ======================================================= */
 body {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 1.7;
   color: gray;
-  background: #e8e8e8; }
+  background: #fff8e8; }
 
 #page {
   position: relative;
@@ -43,12 +43,12 @@ body {
       content: ""; }
 
 a {
-  color: #66D37E;
+  color: #cc4d4d;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
   a:hover, a:active, a:focus {
-    color: #66D37E;
+    color: #cc4d4d;
     outline: none;
     text-decoration: none; }
 
@@ -57,28 +57,28 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Lobster", cursive;
   font-weight: 400;
   margin: 0 0 20px 0; }
 
 ::-webkit-selection {
   color: #fff;
-  background: #66D37E; }
+  background: #cc4d4d; }
 
 ::-moz-selection {
   color: #fff;
-  background: #66D37E; }
+  background: #cc4d4d; }
 
 ::selection {
   color: #fff;
-  background: #66D37E; }
+  background: #cc4d4d; }
 
 .container-wrap {
   /*max-width: 1060px;*/
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 1em;
-  background: #fff; }
+  background: #fff8e8; }
   @media screen and (max-width: 768px) {
     .container-wrap {
       width: 100%; } }
@@ -94,14 +94,13 @@ h1, h2, h3, h4, h5, h6, figure {
       .fh5co-nav .top-menu {
         padding: 28px 1em; } }
   .fh5co-nav #fh5co-logo {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: "Source Sans Pro", sans-serif; }
+    font-weight: 400;
+    font-family: "Lobster", cursive; }
     .fh5co-nav #fh5co-logo a span {
-      color: #66D37E; }
+      color: #cc4d4d; }
   .fh5co-nav a {
     padding: 5px 0;
     color: #000; }
@@ -112,19 +111,19 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 0;
     margin: 5px 0 0 0; }
     .fh5co-nav ul li {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: "Lobster", cursive;
       padding: 0;
       margin: 0;
       list-style: none;
       display: inline;
       text-transform: uppercase;
       letter-spacing: 0.25px;
-      font-weight: 600; }
+      font-weight: 400; }
       .fh5co-nav ul li a {
         position: relative;
         font-size: 13px;
         padding: 30px 12px;
-        color: rgba(0, 0, 0, 0.3);
+        opacity: 0.5;
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s; }
@@ -136,7 +135,7 @@ h1, h2, h3, h4, h5, h6, figure {
           content: '';
           width: 58%;
           height: 2px;
-          background: #66D37E;
+          background: #cc4d4d;
           margin: 0 auto;
           opacity: 0;
           -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -163,7 +162,7 @@ h1, h2, h3, h4, h5, h6, figure {
           top: 40px;
           left: 0;
           text-align: left;
-          background: #000;
+          background: #cc0000;
           padding: 20px;
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;
@@ -192,7 +191,7 @@ h1, h2, h3, h4, h5, h6, figure {
             .fh5co-nav ul li.has-dropdown .dropdown li a {
               padding: 2px 0;
               display: block;
-              color: #999999;
+              color: white;
               line-height: 1.2;
               text-transform: none;
               font-size: 13px;
@@ -200,12 +199,12 @@ h1, h2, h3, h4, h5, h6, figure {
               .fh5co-nav ul li.has-dropdown .dropdown li a:hover {
                 color: #fff; }
         .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
-          color: #000; }
+          color: #cc0000; }
       .fh5co-nav ul li.btn-cta a {
         padding: 30px 0px !important;
         color: #fff; }
         .fh5co-nav ul li.btn-cta a span {
-          background: #66d37e;
+          background: #cc4d4d;
           padding: 4px 10px;
           display: -moz-inline-stack;
           display: inline-block;
@@ -224,6 +223,7 @@ h1, h2, h3, h4, h5, h6, figure {
           box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75); }
       .fh5co-nav ul li.active > a {
         color: #000 !important;
+        opacity: 1;
         position: relative; }
         .fh5co-nav ul li.active > a:after {
           opacity: 1;
@@ -327,7 +327,7 @@ h1, h2, h3, h4, h5, h6, figure {
           #fh5co-hero .flexslider .flex-control-nav li a.flex-active {
             cursor: pointer;
             background: transparent;
-            border: 2px solid #66D37E; }
+            border: 2px solid #cc4d4d; }
     #fh5co-hero .flexslider .flex-direction-nav {
       display: none; }
     #fh5co-hero .flexslider .slider-text {
@@ -346,7 +346,7 @@ h1, h2, h3, h4, h5, h6, figure {
           margin: 0;
           padding: 0;
           color: black;
-          font-family: "Oxygen", sans-serif; }
+          font-family: "Raleway", sans-serif; }
         #fh5co-hero .flexslider .slider-text > .slider-text-inner h1 {
           margin-bottom: 20px;
           font-size: 30px;
@@ -360,8 +360,8 @@ h1, h2, h3, h4, h5, h6, figure {
           line-height: 1.5;
           margin-bottom: 30px; }
           #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 a {
-            color: rgba(102, 211, 126, 0.8);
-            border-bottom: 1px solid rgba(102, 211, 126, 0.7); }
+            color: rgba(204, 77, 77, 0.8);
+            border-bottom: 1px solid rgba(204, 77, 77, 0.7); }
         #fh5co-hero .flexslider .slider-text > .slider-text-inner .heading-section {
           font-size: 50px; }
           @media screen and (max-width: 768px) {
@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5, h6, figure {
   .services h3 {
     margin-bottom: 40px;
     font-size: 13px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Lobster", cursive;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700; }
@@ -531,14 +531,14 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100%;
     font-weight: 400;
     margin-bottom: .3em;
-    font-family: "Source Sans Pro", sans-serif; }
+    font-family: "Lobster", cursive; }
   .fh5co-counters .fh5co-counter-label {
     font-size: 12px;
     margin-bottom: 2em;
     display: block;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Lobster", cursive;
     font-weight: 600;
     color: gray; }
 
@@ -600,7 +600,7 @@ h1, h2, h3, h4, h5, h6, figure {
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
-      font-family: "Source Sans Pro", sans-serif; }
+      font-family: "Lobster", cursive; }
       .fh5co-blog .blog-text h3 a {
         color: black; }
 
@@ -663,7 +663,7 @@ h1, h2, h3, h4, h5, h6, figure {
         color: rgba(255, 255, 255, 0.8); }
       .blog-flex .featured-blog .desc-t h3 {
         font-weight: 700;
-        font-family: "Oxygen", sans-serif;
+        font-family: "Raleway", sans-serif;
         font-size: 30px;
         margin-bottom: 10px;
         line-height: 40px;
@@ -681,7 +681,7 @@ h1, h2, h3, h4, h5, h6, figure {
         letter-spacing: 2px;
         font-weight: 600;
         font-size: 14px;
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: "Lobster", cursive;
         color: white;
         border: 1px solid red;
         padding: 10px 15px;
@@ -708,7 +708,7 @@ h1, h2, h3, h4, h5, h6, figure {
         padding-left: 110px; }
         .blog-flex .blog-entry .blog-post .desc h3 {
           font-weight: 300;
-          font-family: "Oxygen", sans-serif;
+          font-family: "Raleway", sans-serif;
           font-size: 16px;
           line-height: 30px;
           margin-bottom: 10px; }
@@ -772,7 +772,7 @@ input[type="text"] {
 .form-group {
   margin-bottom: 30px; }
   .form-group .btn-modify {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Lobster", cursive;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -795,7 +795,7 @@ input[type="text"] {
       display: inline-block;
       zoom: 1;
       *display: inline;
-      color: #66D37E;
+      color: #cc4d4d;
       padding-left: 10px;
       padding-right: 10px; }
       .fh5co-social-icons li a i {
@@ -810,7 +810,7 @@ input[type="text"] {
     margin-bottom: 20px;
     line-height: 1.5;
     font-weight: 700;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Lobster", cursive;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #000; }
@@ -824,6 +824,8 @@ input[type="text"] {
 #fh5co-footer {
   margin-top: 20px !important;
   padding: 2em 3em 0; }
+  #fh5co-footer a {
+    text-decoration: underline; }
   #fh5co-footer .fh5co-footer-links {
     padding: 0;
     margin: 0; }
@@ -840,15 +842,16 @@ input[type="text"] {
         text-decoration: none; }
         #fh5co-footer .fh5co-footer-links li a:hover {
           text-decoration: underline; }
-  #fh5co-footer h4 {
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase; }
+  #fh5co-footer h3 {
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center; }
   #fh5co-footer .copyright {
     display: block;
-    /*margin-top: 3em;*/ }
+    margin-top: 50px; }
     #fh5co-footer .copyright .block {
       display: block; }
   @media screen and (min-width: 992px) {
@@ -860,7 +863,7 @@ input[type="text"] {
   z-index: 1901;
   width: 35vw;
   background: black;
-  background: #66d37e;
+  background: #cc4d4d;
   top: 0;
   right: 0;
   top: 0;
@@ -886,7 +889,7 @@ input[type="text"] {
     -o-transform: translateX(0px);
     transform: translateX(0px); }
   #fh5co-offcanvas a {
-    color: black; }
+    color: #fff; }
     #fh5co-offcanvas a:hover {
       color: rgba(255, 255, 255, 0.8); }
   #fh5co-offcanvas ul {
@@ -992,9 +995,9 @@ input[type="text"] {
       transition: all .2s ease-out; }
   .fh5co-nav-toggle.fh5co-nav-white > i {
     color: #fff;
-    background: #000; }
+    background: #cc4d4d; }
     .fh5co-nav-toggle.fh5co-nav-white > i::before, .fh5co-nav-toggle.fh5co-nav-white > i::after {
-      background: #000; }
+      background: #cc4d4d; }
 
 .fh5co-nav-toggle i::before {
   top: -7px; }
@@ -1049,7 +1052,7 @@ input[type="text"] {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Oxygen", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 1px;
@@ -1069,18 +1072,18 @@ input[type="text"] {
     outline: none !important; }
 
 .btn-primary {
-  background: #66D37E;
+  background: #cc4d4d;
   color: #fff;
-  border: 2px solid #66D37E; }
+  border: 2px solid #cc4d4d; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #7ad98f !important;
-    border-color: #7ad98f !important; }
+    background: #d26161 !important;
+    border-color: #d26161 !important; }
   .btn-primary.btn-outline {
     background: transparent;
-    color: #66D37E;
-    border: 2px solid #66D37E; }
+    color: #cc4d4d;
+    border: 2px solid #cc4d4d; }
     .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-      background: #66D37E;
+      background: #cc4d4d;
       color: #fff; }
 
 .btn-success {
@@ -1186,7 +1189,7 @@ input[type="text"] {
   .form-control:active, .form-control:focus {
     outline: none;
     box-shadow: none;
-    border-color: #66D37E; }
+    border-color: #cc4d4d; }
 
 .row-pb-md {
   padding-bottom: 4em !important; }

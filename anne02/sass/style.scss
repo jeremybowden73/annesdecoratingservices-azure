@@ -1,5 +1,5 @@
-$font-primary: 'Oxygen', sans-serif;
-$font-secondary: 'Source Sans Pro', sans-serif;
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Lobster', cursive;
 
 
 
@@ -8,7 +8,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #66D37E !default;
+$brand-primary: #cc4d4d !default;
 $brand-secondary: #007CB9 !default;
 
 $brand-white: #fff;
@@ -16,10 +16,11 @@ $brand-black: #000;
 $brand-darker: #444;
 $brand-gray: #ccc;
 $brand-lighter: #e9e9e9;
-$brand-body-color: #e8e8e8;
+$brand-body-color: #fff8e8;
 $brand-selection-color: #f9f6f0;
 $brand-overlay-color: #4c4a8a;
 $brand-bg-color: $brand-white;
+$brand-red: #cc0000;
 
 $input-border-focus:  $brand-primary !default;
 $form-group-margin-bottom:       30px !default;
@@ -176,7 +177,7 @@ h1, h2, h3, h4, h5, h6, figure {
     max-width: 90%;
 	margin: 0 auto;
 	margin-bottom: 1em;
-	background: $brand-white;
+	background: $brand-body-color;
 	@media screen and (max-width: $screen-sm ) {
 		width: 100%;
 	}
@@ -195,11 +196,10 @@ h1, h2, h3, h4, h5, h6, figure {
 
 	}
 	#fh5co-logo {
-		font-size: 24px;
+		font-size: 30px;
 		margin: 0;
 		padding: 0;
-		text-transform: uppercase;
-		font-weight: 600;
+		font-weight: 400;
 		font-family: $font-secondary;
 		a{
 			span{
@@ -211,6 +211,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		padding: 5px 0;
 		color: $brand-black;
 	}
+
 	.menu-1 {
 		@media screen and (max-width: $screen-sm ) {
 			display: none;
@@ -227,12 +228,12 @@ h1, h2, h3, h4, h5, h6, figure {
 			display: inline;
 			text-transform: uppercase;
 			letter-spacing: 0.25px;
-			font-weight: 600;
+			font-weight: 400;
 			a {
 				position: relative;
 				font-size: 13px;
 				padding: 30px 12px;
-				color: rgba(0,0,0,.3);
+				opacity: 0.5;
 				@include transition(.5s);
 
 				&:after{
@@ -275,7 +276,7 @@ h1, h2, h3, h4, h5, h6, figure {
 					top: 40px;
 					left: 0;
 					text-align: left;
-					background: $brand-black;
+					background: $brand-red;
 					padding: 20px;
 					@include border-radius(4px);
 					@include transition(.0s);
@@ -302,7 +303,7 @@ h1, h2, h3, h4, h5, h6, figure {
 						a {
 							padding: 2px 0;
 							display: block;
-							color: lighten($brand-black, 60%);
+							color: lighten($brand-red, 60%);
 							line-height: 1.2;
 							text-transform: none;
 							font-size: 13px;
@@ -315,7 +316,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				}
 				&:hover, &:focus {
 					a {
-						color: $brand-black;
+						color: $brand-red;
 					}
 					.dropdown {
 						// visibility: visible;
@@ -346,6 +347,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			&.active {
 				> a {
 					color: $brand-black!important;
+                    opacity: 1;
 					position: relative;
 
 					&:after{
@@ -1032,6 +1034,10 @@ input[type="text"] {
     margin-top: 20px !important;
     padding: 2em 3em 0;
 
+    a {
+        text-decoration: underline;
+    }
+
     .fh5co-footer-links {
         padding: 0;
         margin: 0;
@@ -1057,17 +1063,18 @@ input[type="text"] {
         }
     }
 
-    h4 {
-        margin-bottom: 15px;
-        font-weight: 700;
-        font-size: 13px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
+    h3 {
+        margin-bottom: 5px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
     }
 
     .copyright {
         display: block;
-        /*margin-top: 3em;*/
+        margin-top: 50px;
         .block {
             display: block;
         }
@@ -1086,7 +1093,7 @@ input[type="text"] {
     z-index: 1901;
     width: 35vw;
     background: lighten($brand-black, 0%);
-    background: lighten(#66d37e, 0%);
+    background: lighten($brand-primary, 0%);
     top: 0;
     right: 0;
     top: 0;
@@ -1106,7 +1113,7 @@ input[type="text"] {
     }
 
     a {
-        color: black;
+        color: $brand-white;
 
         &:hover {
             color: rgba(255,255,255,.8);
@@ -1234,9 +1241,9 @@ input[type="text"] {
   &.fh5co-nav-white {
   	> i {
   		color:$brand-white;
-  		background: $brand-black;
+  		background: $brand-primary;
   		&::before, &::after {
-  			background: $brand-black;
+  			background: $brand-primary;
   		}
   	}
   }
