@@ -78,8 +78,7 @@ h1, h2, h3, h4, h5, h6, figure {
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 1em;
-  background: #fff8e8;
-  }
+  background: #fff8e8; }
   @media screen and (max-width: 768px) {
     .container-wrap {
       width: 100%; } }
@@ -117,9 +116,9 @@ h1, h2, h3, h4, h5, h6, figure {
       margin: 0;
       list-style: none;
       display: inline;
-      text-transform: uppercase;
-      letter-spacing: 0.25px;
-      font-weight: 400; }
+      letter-spacing: 1.25px;
+      font-weight: 400;
+      font-size: 16px; }
       .fh5co-nav ul li a {
         position: relative;
         font-size: 13px;
@@ -389,8 +388,7 @@ h1, h2, h3, h4, h5, h6, figure {
               width: 100%; } }
 
 .fh5co-light-grey {
-  /* background: #fafafa; */
-  }
+  background: #fafafa; }
 
 #fh5co-about,
 #fh5co-services,
@@ -817,8 +815,7 @@ input[type="text"] {
     font-weight: 400;
     font-family: "Lobster", cursive;
     letter-spacing: 1.5px;
-    color: #000;
-    }
+    color: #000; }
   .fh5co-heading span {
     display: block;
     margin-bottom: 10px;
